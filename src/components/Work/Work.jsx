@@ -23,7 +23,7 @@ class Work extends React.Component {
         <div className={styles.container}>
           <img
             className={styles.border}
-            src="../public/border.svg"
+            src="https://res.cloudinary.com/madeleinebrighouse/image/upload/v1572477393/Barbara%27s%20Website/border_dxcibr.svg"
             alt="Boarder"
           />
           <div className={styles.item}>
