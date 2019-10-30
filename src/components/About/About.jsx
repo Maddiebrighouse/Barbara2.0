@@ -1,15 +1,17 @@
 import React from 'react';
-import ReactSVG from 'react-svg'
+import ReactSVG from 'react-svg';
 
-import AboutImage from '../../public/about.svg';
 import styles from './about.css';
 
 const About = () => {
   return (
     <div className={styles.about}>
       <div>
-        <ReactSVG src={AboutImage} />
-        <img className={styles.about_title} src={AboutImage} alt="Hand Written About Title" />
+        <img
+          className={styles.about_title}
+          src="https://res.cloudinary.com/madeleinebrighouse/image/upload/v1572477393/Barbara%27s%20Website/about_kth9ck.svg"
+          alt="Hand Written About Title"
+        />
       </div>
       <div className={styles.about_container}>
         <div className={styles.about_info}>
