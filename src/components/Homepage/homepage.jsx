@@ -1,21 +1,17 @@
 import React from 'react';
-
-import BarbaraFace from '../../public/barbara.svg';
 import styles from './homepage.css';
 
 const Homepage = () => {
   return (
     <div className={styles.homepage}>
-      <svg src={BarbaraFace}></svg>
-      <svg src="../../public/barbara.svg"></svg>
       <img
         className={styles.mainImage}
-        src="../../public/barbara.svg"
-        alt="Sketch of Barbara"
+        src="https://res.cloudinary.com/madeleinebrighouse/image/upload/v1572477393/Barbara%27s%20Website/barbara_qnwrgk.svg"
+        alt="Sketch of Bargbara"
       />
       <img
         className={styles.mainTitle}
-        src="../public/barbara_title.svg"
+        src="https://res.cloudinary.com/madeleinebrighouse/image/upload/v1572477393/Barbara%27s%20Website/Barbara_title_gbs5x8.svg"
         alt="Title Barbara Darragh"
       />
       <div className={styles.lucy}>
