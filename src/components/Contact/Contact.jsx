@@ -8,12 +8,12 @@ const Contact = () => {
       <div className={styles.contact}>
         <img
           className={styles.contacttitle}
-          src="./public/contact-title.svg"
+          src="https://res.cloudinary.com/madeleinebrighouse/image/upload/v1572477395/Barbara%27s%20Website/contact-title_s29ye8.svg"
           alt="Contact Header"
         />
         <img
           className={styles.needle}
-          src="/Users/madeleinebrighouse/workspace/webpack-react-boilerplate/src/public/needle.svg"
+          src="https://res.cloudinary.com/madeleinebrighouse/image/upload/v1572477395/Barbara%27s%20Website/needle_zcgofg.svg"
           alt="Drawing of a needle"
         />
       </div>
