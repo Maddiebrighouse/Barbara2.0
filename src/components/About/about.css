@@ -1,0 +1,26 @@
+.about {
+  height: 100vh;
+  background-color: black;
+}
+
+.about_info {
+  color: white;
+  margin-left: 35%;
+  padding-top: 20%;
+  padding-right: 5%;
+}
+
+.about_title {
+  width: 30%;
+  left: 0;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.text {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2em;
+  text-align: right;
+  color: white;
+}

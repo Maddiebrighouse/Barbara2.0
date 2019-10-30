@@ -1,0 +1,45 @@
+.contactcontainer {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.needle {
+  width: 90%;
+  padding-top: 40%;
+}
+
+.contacttitle {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 30%;
+  left: 0;
+  position: absolute;
+}
+
+.contactdetails {
+  display: flex;
+  flex-direction: row;
+}
+
+hr {
+  border-left: 1px dashed white;
+  border-right: none;
+  height: 80%;
+  width: 1px;
+  margin-top: 100px;
+}
+
+.text {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2em;
+  text-align: right;
+  color: white;
+}

@@ -1,0 +1,55 @@
+.homepage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.text {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: right;
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+.mainImage {
+  padding-top: 10px;
+  width: 50%;
+}
+.mainTitle {
+  width: 60%;
+}
+
+/*  Ipad Pro size.  */
+@media only screen and (max-width: 1024px) {
+  .mainImage {
+    padding-top: 20%;
+    width: 90%;
+  }
+  .mainTitle {
+    width: 90%;
+  }
+
+  .text {
+    margin-top: 250px;
+    font-size: 200%;
+  }
+}
+
+/* tablet size, Ipad */
+@media only screen and (max-width: 768px) {
+  .text {
+    margin-top: 180px;
+    font-size: 150%;
+  }
+}
+
+/* Mobile size */
+@media only screen and (max-width: 411px) {
+  .mainImage {
+    padding-top: 40%;
+  }
+
+  .text {
+    font-size: 100%;
+    margin-top: 150px;
+  }
+}
