@@ -43,11 +43,11 @@
   margin-top: 100px;
 }
 
-.hr2{
+.hr2 {
   border-left: none;
   border-right: none;
   height: 0%;
-  width: 0%; 
+  width: 0%;
   margin: 2%;
 }
 
@@ -58,14 +58,14 @@
   color: white;
 }
 
-h3{
+h3 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 2.5em;
   text-align: right;
   color: white;
 }
 
-.a{
+.a {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 2em;
   text-align: right;
@@ -81,25 +81,25 @@ h3{
     text-align: center;
     margin: 0%;
   }
-  h3{
+  h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 300%;
     text-align: center;
     margin-bottom: 5px;
   }
-  .a{
+  .a {
     text-align: center;
   }
   .contactdetails {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     padding-right: 0%;
     padding-top: 1%;
   }
   .contactcontainer {
     flex-direction: column;
   }
-  .contacttitle{
+  .contacttitle {
     width: 60%;
   }
   .needle {
@@ -110,11 +110,11 @@ h3{
     padding-top: 3%;
     padding-bottom: 3%;
   }
-  .hr1{
+  .hr1 {
     display: none;
   }
   .hr2 {
-    border-bottom: 1px; 
+    border-bottom: 1px;
     border: dashed 7px white;
     border-top: none;
     height: 1px;
@@ -132,13 +132,13 @@ h3{
     text-align: center;
     margin: 0%;
   }
-  h3{
+  h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 200%;
     text-align: center;
     margin-bottom: 5px;
   }
-  .a{
+  .a {
     text-align: center;
   }
   .contactdetails {
@@ -156,15 +156,15 @@ h3{
     width: 50%;
     padding-top: 10%;
   }
-  .hr1{
+  .hr1 {
     border-left: none;
     border-right: none;
     height: 0%;
-    width: 0%; 
+    width: 0%;
     margin: 2%;
   }
   .hr2 {
-    border-bottom: 1px; 
+    border-bottom: 1px;
     border-width: 9px;
     border: dashed 3px white;
     border-top: none;
@@ -176,7 +176,7 @@ h3{
 /* Mobile Iphone Plus */
 @media only screen and (width: 414px) {
   .hr2 {
-    border-bottom: 1px; 
+    border-bottom: 1px;
     border: dashed 3px white;
     border-top: none;
     height: 1px;
