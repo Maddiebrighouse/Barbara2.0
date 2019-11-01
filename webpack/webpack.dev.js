@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        use: ['@svgr/webpack'],
+        loader: 'svg-inline-loader'
       },
       {
         test: /\.jsx?$/,
