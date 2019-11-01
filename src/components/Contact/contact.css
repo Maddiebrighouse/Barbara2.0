@@ -3,17 +3,21 @@
   background-color: black;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 30%;
 }
 
 .needle {
-  width: 90%;
-  padding-top: 40%;
+  width: 150%;
+  padding-top: 60%;
+}
+.needle2 {
+  width: 0%;
 }
 
 .contacttitle {
@@ -26,10 +30,12 @@
 
 .contactdetails {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding-right: 10%;
+  padding-top: 10%;
 }
 
-hr {
+.hr1 {
   border-left: 1px dashed white;
   border-right: none;
   height: 80%;
@@ -37,9 +43,144 @@ hr {
   margin-top: 100px;
 }
 
+.hr2{
+  border-left: none;
+  border-right: none;
+  height: 0%;
+  width: 0%; 
+  margin: 2%;
+}
+
 .text {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 2em;
   text-align: right;
   color: white;
+}
+
+h3{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2.5em;
+  text-align: right;
+  color: white;
+}
+
+.a{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2em;
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+/* tablet size, Ipad */
+@media only screen and (max-width: 1024px) {
+  .text {
+    font-size: 250%;
+    text-align: center;
+    margin: 0%;
+  }
+  h3{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 300%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .a{
+    text-align: center;
+  }
+  .contactdetails {
+    display: flex;
+    flex-direction: column;  
+    padding-right: 0%;
+    padding-top: 1%;
+  }
+  .contactcontainer {
+    flex-direction: column;
+  }
+  .contacttitle{
+    width: 60%;
+  }
+  .needle {
+    width: 0%;
+  }
+  .needle2 {
+    width: 50%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .hr1{
+    display: none;
+  }
+  .hr2 {
+    border-bottom: 1px; 
+    border: dashed 7px white;
+    border-top: none;
+    height: 1px;
+    width: 80%;
+    margin-top: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+
+/* Mobile size */
+@media only screen and (max-width: 411px) {
+  .text {
+    font-size: 150%;
+    text-align: center;
+    margin: 0%;
+  }
+  h3{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .a{
+    text-align: center;
+  }
+  .contactdetails {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactcontainer {
+    flex-direction: column;
+  }
+
+  .needle {
+    width: 0%;
+  }
+  .needle2 {
+    width: 50%;
+    padding-top: 10%;
+  }
+  .hr1{
+    border-left: none;
+    border-right: none;
+    height: 0%;
+    width: 0%; 
+    margin: 2%;
+  }
+  .hr2 {
+    border-bottom: 1px; 
+    border-width: 9px;
+    border: dashed 3px white;
+    border-top: none;
+    height: 1px;
+    width: 80%;
+    margin-top: 50px;
+  }
+}
+/* Mobile Iphone Plus */
+@media only screen and (width: 414px) {
+  .hr2 {
+    border-bottom: 1px; 
+    border: dashed 3px white;
+    border-top: none;
+    height: 1px;
+    width: 80%;
+    margin-top: 50px;
+  }
 }
