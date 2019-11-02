@@ -1,5 +1,5 @@
 import React from 'react';
-// import request from 'superagent';
+import request from 'superagent';
 
 import styles from './work.css';
 
@@ -9,13 +9,13 @@ class Work extends React.Component {
     this.state = {};
   }
 
-  // componentDidMount() {
-  //   request.get(`/api/v1/jobs`).then(res => {
-  //     this.setState({
-  //       jobs: res.body.jobs,
-  //     });
-  //   });
-  // }
+  componentDidMount() {
+    request.get(`/api/v1`).then(res => {
+      this.setState({
+        work: res.body.value,
+      });
+    });
+  }
 
   render() {
     return (
