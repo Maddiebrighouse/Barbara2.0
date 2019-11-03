@@ -1,30 +1,13 @@
 .work {
-  height: 100vh;
-  background-color: white;
-}
-
-.container {
-  padding-top: 250px;
-  display: flex;
-  flex-direction: row;
-  /* border: 10px solid transparent;
-    padding: 15px;
-    border-image: url(./border.png) 30 round; */
-}
-
-.item {
-  left: 0px;
-  padding: 10px;
-  z-index: 1;
-}
-
-.border {
-  position: absolute;
-  height: 80%;
-  width: 100%;
-  top: 210%;
-}
-
-.text {
-  color: black !important;
-}
+    height: 100vh;
+    background-color: white;
+    background-image: url('https://res.cloudinary.com/madeleinebrighouse/image/upload/v1572477393/Barbara%27s%20Website/border_dxcibr.svg');
+    background-size: cover;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
