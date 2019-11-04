@@ -2,12 +2,14 @@
     height: 100vh;
     background-color: white;
     background-image: url('https://res.cloudinary.com/madeleinebrighouse/image/upload/v1572477393/Barbara%27s%20Website/border_dxcibr.svg');
-    background-size: cover;
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
   }
   
   .container {
-    display: flex;
-    flex-direction: row;
+    padding-top: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
   
   
