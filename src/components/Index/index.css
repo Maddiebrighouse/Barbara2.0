@@ -3,8 +3,7 @@
   left: 0px;
   padding: 10px;
   z-index: 1;
-  display: flex;
-  justify-content: space-between;
+  width: 150px;
 }
 
 .image{
@@ -18,25 +17,36 @@
   filter: grayscale(100%);
 }
 
-.middle{
+.overlay{
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
-  margin-left: 400px;
-}
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-.item:hover .image {
-  opacity: 0.3;
+  height: 226px;
+  width: 150px;
+  background-color: rgba(255,255,255,0.1);
+  margin-top: -253px;
 }
 
-.item:hover .middle {
+.text {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: black;
+
+}
+.item:hover .image {
+  opacity: 0.2;
+}
+
+.item:hover .overlay {
   opacity: 1;
+}
+
+.category{
+  font-size: 1.5em;
+  text-align: center;
+  color: black;
+}
+
+p{
+  margin: 0%;
 }
