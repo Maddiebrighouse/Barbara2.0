@@ -6,7 +6,7 @@ const uri = `mongodb+srv://${process.env.USERNAMEDB}:${process.env.PASSWORDDB}@c
 
 module.exports = {
     getJobs: async (values) => {
-        const clientPromise = (MongoClient.connect(uri, {useNewUrlParser: true}));
+        const clientPromise = (MongoClient.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true }));
         const client = await Promise.resolve(clientPromise);
         const db = client.db('BarbaraDb');
         const output = await db.collection('WorkExperience')
