@@ -22,7 +22,7 @@ const About = () => {
             Occasional stage productions She has several awards for costume
             design plus a Emmy nominations for Spartacus The last year has
             involved costume design for a Netflix project The Letter For The
-            King ATB Costume Hire is an expanding business she also owns to
+            King <a className={styles.a}href="http://atb.net.nz/" target="_blank">ATB Costume Hire</a> is an expanding business she also owns to
             facilitate industry designers and stylists.
           </p>
         </div>
