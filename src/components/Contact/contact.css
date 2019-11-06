@@ -106,7 +106,7 @@ h3 {
     width: 0%;
   }
   .needle2 {
-    width: 50%;
+    width: 70%;
     padding-top: 3%;
     padding-bottom: 3%;
   }
@@ -148,13 +148,13 @@ h3 {
   .contactcontainer {
     flex-direction: column;
   }
-
   .needle {
     width: 0%;
   }
   .needle2 {
     width: 50%;
     padding-top: 10%;
+    padding-left: 2%;
   }
   .hr1 {
     border-left: none;
@@ -182,5 +182,12 @@ h3 {
     height: 1px;
     width: 80%;
     margin-top: 50px;
+  }
+}
+
+/* For mobiles that are longer */
+@media only screen and (min-height: 731px) and (max-width: 411px){
+  .needle2{
+    margin-bottom: 20%;
   }
 }
