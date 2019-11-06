@@ -1,7 +1,7 @@
 {
-  "name": "minimal-webpack-react",
+  "name": "barbara-darragh",
   "version": "2.0.0",
-  "description": "Boilerplate for react and webpack",
+  "description": "Basic Website For Barbara Darragh Costume Designer",
   "main": "src/server/index.js",
   "scripts": {
     "dev": "nodemon index & webpack --watch",
@@ -9,18 +9,6 @@
     "build": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage"
-  },
-  "lint-staged": {
-    "*.{js,jsx,scss,css,md}": [
-      "prettier --write --single-quote",
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "jest": {
     "testEnvironment": "jsdom",
