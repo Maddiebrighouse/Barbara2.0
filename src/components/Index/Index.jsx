@@ -78,10 +78,10 @@ class Index extends React.Component {
                         ></img>
                         <div className={styles.overlay}>
                             <div className={styles.text}>
-                            <h1>{work.name}</h1>
+                            <h1 className={styles.header}>{work.name}</h1>
                             <h3 className={styles.category}>{work.category}</h3>
-                            <Moment format="YYYY" withTitle>{work.date}</Moment> 
-                            <p>{work.occupation}</p>
+                            <Moment format="YYYY" withTitle className={styles.date}>{work.date}</Moment> 
+                            <p className={styles.occupation}>{work.occupation}</p>
                             </div>
                         </div>
                     </div>

@@ -22,10 +22,11 @@
   opacity: 0;
   position: absolute;
   text-align: center;
-  height: 226px;
-  width: 150px;
-  background-color: rgba(255,255,255,0.1);
-  margin-top: -253px;
+  height: 100%;
+  width: 180px;
+  background-color: rgba(255,255,255,0.2);
+  top: 0;
+  padding: 10px;
 }
 
 .text {
@@ -56,12 +57,42 @@ p{
     width: 483px;
     height: 767px;
   }
+  .overlay{
+    width: 465px;
+  }
+  .header{
+    font-size: 5em;
+  }
+  .category{
+    font-size: 3.5em;
+  }
+  .date{
+    font-size: 2em;
+  }
+  .occupation{
+    font-size: 2em;
+  }
 }
 /* Ipad Size */
 @media only screen and (max-width: 768px){
   .item{
     width: 361px;
     height: 655px;
+  }
+  .overlay{
+    width: 340px;
+  }
+  .header{
+    font-size: 4em;
+  }
+  .category{
+    font-size: 2.5em;
+  }
+  .date{
+    font-size: 2em;
+  }
+  .occupation{
+    font-size: 2em;
   }
 }
 /* Phone that is 414px wide */
@@ -70,6 +101,21 @@ p{
     width: 280px;
     height: 400px;
     margin-left: 50px;
+  }
+  .overlay{
+    width: 260px;
+  }
+  .header{
+    font-size: 3em;
+  }
+  .category{
+    font-size: 2em;
+  }
+  .date{
+    font-size: 1.5em;
+  }
+  .occupation{
+    font-size: 1.5em;
   }
 }
 /* Phone that is 350px wide */
