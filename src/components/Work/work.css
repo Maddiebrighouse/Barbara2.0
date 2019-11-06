@@ -1,9 +1,6 @@
 .work {
     height: 100vh;
     background-color: white;
-    background-image: url('https://res.cloudinary.com/madeleinebrighouse/image/upload/v1572477393/Barbara%27s%20Website/border_dxcibr.svg');
-    background-size: 300% 100%;
-    background-repeat: no-repeat;
   }
   
   .container {
@@ -11,5 +8,45 @@
     padding-left: 80px;
     padding-right: 80px;
   }
+
+  .worktitle{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 25%;
+    left: 0;
+    position: absolute;
+  }
   
+  /* Ipad pro Size */
+  @media only screen and (max-width: 1025px){
+    .container{
+      padding-top: 30%;
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+    .worktitle {
+      width: 55%;
+    }
+  }
+
+  /* Ipad Size */
+  @media only screen and (max-width: 768px){
+    .container{
+      padding-top: 27%;
+    }
+    .worktitle {
+      width: 55%;
+    }
+  }
+  /* Phone that is 812px height */
+  @media only screen and (height: 812px){
+    .container{
+      padding-top: 40%;
+    }
+  }
+  @media only screen and (height: 823px){
+    .container{
+      padding-top: 40%;
+    }
+}
   

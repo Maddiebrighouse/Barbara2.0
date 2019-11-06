@@ -1,9 +1,9 @@
-
 .item {
   left: 0px;
   padding: 10px;
   z-index: 1;
-  width: 150px;
+  width: 200px;
+  height: 300px;
 }
 
 .image{
@@ -49,4 +49,50 @@
 
 p{
   margin: 0%;
+}
+/* Ipad Pro Size */
+@media only screen and (max-width: 1025px){
+  .item{
+    width: 483px;
+    height: 767px;
+  }
+}
+/* Ipad Size */
+@media only screen and (max-width: 768px){
+  .item{
+    width: 361px;
+    height: 655px;
+  }
+}
+/* Phone that is 414px wide */
+@media only screen and (max-width: 414px){
+  .item{
+    width: 280px;
+    height: 400px;
+    margin-left: 50px;
+  }
+}
+/* Phone that is 350px wide */
+@media only screen and (width: 360px){
+  .item{
+    width: 280px;
+    height: 400px;
+    margin-left: 30px;
+  }
+}
+/* Phone that is 375px wide */
+@media only screen and (width: 375px){
+  .item{
+    width: 280px;
+    height: 400px;
+    margin-left: 35px;
+  }
+}
+/* Phone that is 320px wide */
+@media only screen and (width: 320px){
+  .item{
+    width: 225px;
+    height: 335px;
+    margin-left: 35px;
+  }
 }

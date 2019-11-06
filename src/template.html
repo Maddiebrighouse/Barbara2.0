@@ -46,18 +46,48 @@
         margin-left: 100px;
         margin-right: 100px;
       }
+      /* Ipad Pro size */
       @media only screen and (max-width: 1025px){
         .slick-arrow{
           width: 80px;
           height: 80px;
         }
-        .slick-next{
+        .slick-next, .slick-next:focus, .slick-next:hover{
           margin-right: 41px;
+          margin-top: 45%;
         }
-        .slick-prev{
-          margin-right: 41px;
+        .slick-prev,.slick-prev:focus, .slick-prev:hover{
+          margin-left: 41px;
+          margin-top: 50%;
 
         }
+        .slick-list{
+          margin-right: 0%;
+          margin-left: 0%;
+        }
+      }
+
+      /* Ipad size */
+      @media only screen and (max-width: 1025px){
+        .slick-prev, .slick-prev:focus, .slick-prev:hover{
+          margin-top: 50%;
+        }
+        .slick-next, .slick-next:focus, .slick-next:hover{
+          margin-top: 44%;
+        }
+      }
+      /* Phone Size */
+      @media only screen and (max-width: 414px){
+        .slick-prev, .slick-prev:focus, .slick-prev:hover{
+          margin-top: 75%;
+        }
+        .slick-next, .slick-next:focus, .slick-next:hover{
+          margin-top: 66%;
+        }
+        .slick-arrow{
+          width: 50px;
+          height: 50px;
+        }       
       }
     </style>
 
