@@ -12,6 +12,11 @@ class Work extends React.Component {
   render() {
     return (
       <div className={styles.work}>
+        <img
+          className={styles.worktitle}
+          src="https://res.cloudinary.com/madeleinebrighouse/image/upload/v1573022283/Barbara%27s%20Website/work_m1wshf.svg"
+          alt="Contact Header"
+        />
         <div className={styles.container}>
           <Index /> 
         </div>
