@@ -74,12 +74,13 @@ class Index extends React.Component {
                         <img
                             className={styles.image}
                             src={work.image}
-                            alt=""
+                            alt={`Image of the ${work.category} ${work.name}`}
                         ></img>
                         <div className={styles.overlay}>
                             <div className={styles.text}>
                             <h1 className={styles.header}>{work.name}</h1>
                             <h3 className={styles.category}>{work.category}</h3>
+                            <h3 className={styles.episode}>{work.episode}</h3>
                             <Moment format="YYYY" withTitle className={styles.date}>{work.date}</Moment> 
                             <p className={styles.occupation}>{work.occupation}</p>
                             </div>

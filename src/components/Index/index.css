@@ -45,7 +45,15 @@
 .category{
   font-size: 1.5em;
   text-align: center;
+  color: black;    
+  margin-bottom: 0%;
+}
+
+.episode{
+  font-size: 1.5em;
+  text-align: center;
   color: black;
+  margin-top: 0%;
 }
 
 p{
@@ -64,6 +72,9 @@ p{
     font-size: 5em;
   }
   .category{
+    font-size: 3.5em;
+  }
+  .episode{
     font-size: 3.5em;
   }
   .date{
@@ -88,6 +99,9 @@ p{
   .category{
     font-size: 2.5em;
   }
+  .episode{
+    font-size: 2.5em;
+  }
   .date{
     font-size: 2em;
   }
@@ -109,6 +123,9 @@ p{
     font-size: 3em;
   }
   .category{
+    font-size: 2em;
+  }
+  .episode{
     font-size: 2em;
   }
   .date{
@@ -140,5 +157,8 @@ p{
     width: 225px;
     height: 335px;
     margin-left: 35px;
+  }
+  .overlay{
+    width: 205px;
   }
 }
