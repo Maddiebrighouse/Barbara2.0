@@ -31,7 +31,7 @@ const Contact = () => {
         <hr className={styles.hr2} />
         <img
           className={styles.needle2}
-          src="https://res.cloudinary.com/madeleinebrighouse/image/upload/v1572477395/Barbara%27s%20Website/needle_zcgofg.svg"
+          src="https://res.cloudinary.com/madeleinebrighouse/image/upload/v1573014145/Barbara%27s%20Website/Needle-2_ohe1y2.svg"
           alt="Drawing of a needle"
         />
       </div>
