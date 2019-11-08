@@ -8,7 +8,7 @@
     "start": "node ./src/server/index.js",
     "build": "webpack --config ./webpack.config.js",
     "format": "prettier --write 'packages/**/*.js'",
-    "test": "jest --watchAll --coverage"
+    "test": "jest --watchAll --coverage" 
   },
   "jest": {
     "testEnvironment": "jsdom",
