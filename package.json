@@ -5,7 +5,7 @@
   "main": "src/server",
   "mode": "production",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node src/server/index.js",
     "dev": "nodemon --watch server & yarn build --watch",
     "build": "webpack --config ./webpack.config.js",
     "format": "prettier --write 'packages/**/*.js'",
