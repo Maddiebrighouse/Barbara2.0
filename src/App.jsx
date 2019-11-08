@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Homepage from './components/Homepage/homepage';
-import Work from './components/Work/Work';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import './App.css';
+import React, { Component } from "react";
+import Homepage from "./components/Homepage/homepage";
+import Work from "./components/Work/Work";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
