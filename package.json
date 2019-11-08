@@ -2,36 +2,14 @@
   "name": "barbara-darragh",
   "version": "2.0.0",
   "description": "Website For Barbara Darragh Costume Designer describing her career",
-  "main": "src/server/index.js",
+  "main": "src/server",
+  "mode": "production",
   "scripts": {
-    "dev": "nodemon index & webpack --watch",
-    "start": "node ./src/server/index.js",
+    "start": "node server/index.js",
+    "dev": "nodemon --watch server & yarn build --watch",
     "build": "webpack --config ./webpack.config.js",
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage" 
-  },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "moduleDirectories": [
-      "src",
-      "node_modules"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js",
-      "\\.(jpg|gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
-    },
-    "transform": {
-      "^.+\\.(js|jsx)$": "babel-jest",
-      ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
-    },
-    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
-    "moduleFileExtensions": [
-      "css",
-      "scss",
-      "js",
-      "json",
-      "jsx"
-    ]
   },
   "repository": "https://github.com/Maddiebrighouse/Barbara2.0",
   "author": {

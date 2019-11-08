@@ -1,11 +1,45 @@
-const webpackMerge = require('webpack-merge');
-const common = require('./webpack/webpack.common');
+const paths = require('./webpack/paths');
 
-const envs = {
-  development: 'dev',
-  production: 'prod',
+module.exports = {
+  mode: 'production',
+  output: {
+    filename: '[name].js',
+    path: paths.outputPath,
+    chunkFilename: '[name].js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { modules: true } },
+        ],
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'babel-loader',
+            query: {
+              presets: ['@babel/preset-env', '@babel/preset-react'],
+            },
+          },
+        ],
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
+
+  // devServer: {
+  //   contentBase: paths.outputPath,
+  //   compress: true,
+  // },
 };
-/* eslint-disable global-require,import/no-dynamic-require */
-const env = envs[process.env.NODE_ENV || 'development'];
-const envConfig = require(`./webpack/webpack.${env}.js`);
-module.exports = webpackMerge(common, envConfig);
