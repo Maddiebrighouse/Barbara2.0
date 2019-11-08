@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import Index from '../Index/Index'
-import styles from './work.css';
+import Index from "../Index/Index";
+import styles from "./work.css";
 
 class Work extends React.Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class Work extends React.Component {
           alt="Contact Header"
         />
         <div className={styles.container}>
-          <Index /> 
+          <Index />
         </div>
       </div>
     );
