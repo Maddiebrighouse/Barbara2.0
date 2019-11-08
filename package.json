@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index & webpack --watch",
     "start": "node ./src/server/index.js",
-    "build": "cross-env NODE_ENV=production webpack",
+    "build": "node ./src/server/index.js",
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage"
   },
