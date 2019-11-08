@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './homepage.css';
+import React from "react";
+import styles from "./homepage.css";
 
 const Homepage = () => {
   return (

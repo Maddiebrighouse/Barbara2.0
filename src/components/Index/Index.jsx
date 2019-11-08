@@ -1,9 +1,9 @@
-import React from 'react';
-import request from 'superagent';
-import Moment from 'react-moment'
-import Slider from 'react-slick'
+import React from "react";
+import request from "superagent";
+import Moment from "react-moment"
+import Slider from "react-slick"
 
-import styles from './index.css';
+import styles from "./index.css";
 
 class Index extends React.Component {
   constructor(props) {
