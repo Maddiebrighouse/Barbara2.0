@@ -28,30 +28,43 @@
   color: white;
   text-decoration: none;
   font-style: italic;
+  font-weight: 600;
+}
+ /* IPhone X as its longer than most phones */
+@media only screen and (max-height: 812px) {
+  .text{
+    font-size: 170%;
+    text-align: center;
+  }
 }
 
 /*  Ipad Pro size.  */
 @media only screen and (max-width: 1024px) {
   .text{
-    font-size: 300%;
+    font-size: 200%;
     text-align: center;
   }
   .about_info {
     color: white;
     margin-left: 0;
-    padding-top: 40%;
+    padding-top: 30%;
     padding-right: 20px;
     padding-left: 20px;
   }
   .about_title {
-    width: 60%;
+    width: 50%;
+  }
+}
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .text{
+    font-size: 300%;
   }
 }
 
 /* tablet size, Ipad */
 @media only screen and (max-width: 768px) {
   .text{
-    font-size: 250%;
+    font-size: 160%;
     text-align: center;
   }
   .about_info {
@@ -64,11 +77,16 @@
     width: 60%;
   }
 }
+@media only screen and (width: 768px) and (height: 1024px) {
+  .text{
+    font-size: 200%;
+  }
+}
 
 /* Mobile size */
 @media only screen and (max-width: 411px) {
   .text{
-    font-size: 150%;
+    font-size: 130%;
     text-align: center;
   }
   .about_info {
