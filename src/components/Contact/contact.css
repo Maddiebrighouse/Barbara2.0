@@ -72,10 +72,33 @@ h3 {
   color: white;
   text-decoration: none;
   font-style: italic;
+  font-weight: 600;
 }
 
+/* Responsive */
+@media only screen and (min-width: 680px) and (max-width: 1180px){
+  .needle{
+    width: 180%;
+    padding-top: 44%;
+    margin-left: -20%;
+  }
+
+  .contactdetails{
+    padding-right: 2%;
+    padding-top: 10%;
+  }
+
+  .hr1{
+    margin-right: 4%;
+  }
+}
+@media only screen and (max-width:680px) and (min-width: 565px){
+  .needle{
+    margin-left: -20%;
+  }
+}
 /* tablet size, Ipad */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-height: 725px) and (max-height: 1366px){
   .text {
     font-size: 250%;
     text-align: center;
@@ -189,5 +212,42 @@ h3 {
 @media only screen and (min-height: 731px) and (max-width: 411px){
   .needle2{
     margin-bottom: 20%;
+  }
+}
+
+/* Galaxy S5 */
+@media only screen and (width: 360px) and (height: 640px){
+  .contacttitle{
+    width: 60%;
+  }
+  .hr2{
+    margin-left: 10%;
+  }
+}
+
+/* Iphone 5/SE */
+@media only screen and (width: 320px) and (height: 568px){
+  .contacttitle{
+    width: 60%;
+  }
+  .hr2{
+    margin-left: 10%;
+  }
+  .contactdetails{
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
+/* Iphone 6/7/8 */
+@media only screen and (width: 375px) and (height: 667px){
+  .contacttitle{
+    width: 60%;
+  }
+  .hr2{
+    margin-left: 10%;
+  }
+  .contactdetails{
+    padding-right: 0;
+    padding-bottom: 10%;
   }
 }
