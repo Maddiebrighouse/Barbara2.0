@@ -45,24 +45,19 @@ class Index extends React.Component {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
+            dots: true
           }
         },
         {
-          breakpoint: 1024,
+          breakpoint: 830,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+            dots: true
           }
         },
         {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 414,
+          breakpoint: 675,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,

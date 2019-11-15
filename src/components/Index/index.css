@@ -60,53 +60,58 @@ p{
   margin: 0%;
 }
 /* Ipad Pro Size */
-@media only screen and (max-width: 1025px){
+@media only screen and (max-height: 1366px){
+  
+}
+
+@media only screen and (max-width: 830px){
   .item{
-    width: 483px;
-    height: 767px;
+    width: 96%;
+    height: 100%;
   }
   .overlay{
-    width: 465px;
+    width: 1%;
+    height: 76%;
   }
   .header{
-    font-size: 5em;
-  }
-  .category{
-    font-size: 3.5em;
-  }
-  .episode{
-    font-size: 3.5em;
-  }
-  .date{
-    font-size: 2em;
-  }
-  .occupation{
-    font-size: 2em;
+    font-size: 3em;
   }
 }
-/* Ipad Size */
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 675px){
   .item{
-    width: 361px;
-    height: 655px;
+    width: 70%;
+    height: 100%;
+    margin-left: 13%;
+
   }
   .overlay{
-    width: 340px;
+    width:  0.75%;
+    height: 80%;
   }
   .header{
-    font-size: 4em;
+    font-size: 3em;
   }
   .category{
     font-size: 2.5em;
   }
   .episode{
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .date{
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .occupation{
-    font-size: 2em;
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 585px){
+  .item{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .overlay{
+    width: 0.85%;
   }
 }
 /* Phone that is 414px wide */
