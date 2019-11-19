@@ -9,14 +9,24 @@ module.exports = {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
+    const order = [ "Tv Series", "Tv Films", "Film","Commercial"]
     const client = await Promise.resolve(clientPromise);
     const db = client.db("BarbaraDb");
     const output = await db
       .collection("WorkExperience")
-      .find(values)
-      .sort({ date: -1 })
-      .toArray();
+      .find(values).sort()
+      .toArray()
     client.close();
+    output.sort(
+      function(a,b){
+        if (a.category == b.category){
+          return new Date(b.date) - new Date(a.date)
+        } else {
+          return order.indexOf(a.category) - order.indexOf(b.category)
+        }
+      }
+    )
+    console.log(output)
     return output;
   }
 };
