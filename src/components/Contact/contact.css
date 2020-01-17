@@ -92,13 +92,14 @@ h3 {
     margin-right: 4%;
   }
 }
+
 @media only screen and (max-width:680px) and (min-width: 565px){
   .needle{
     margin-left: -20%;
   }
 }
 /* tablet size, Ipad */
-@media only screen and (min-height: 725px) and (max-height: 1366px){
+/* @media only screen and (min-height: 725px) and (max-height: 1366px){
   .text {
     font-size: 250%;
     text-align: center;
@@ -146,7 +147,7 @@ h3 {
     margin-right: 10%;
     margin-left: 10%;
   }
-}
+} */
 
 /* Mobile size */
 @media only screen and (max-width: 411px) {
