@@ -11,5 +11,8 @@ router.get("/", (req, res) => {
       res.status(500).send("DATABASE ERROR: " + err.message);
     });
 });
+router.get('*', function(req, res) {
+    res.redirect('/');
+});  // trying to redirect any route not definded to go back home.
 
 module.exports = router;
