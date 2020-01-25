@@ -1,5 +1,4 @@
 const express = require("express");
-
 const router = express.Router();
 
 const db = require("./db.js");
@@ -12,4 +11,11 @@ router.get("/", (req, res) => {
     });
 });
 
+router.get('*', function(req, res) {
+  res.redirect('/'), function(err) {
+    if (err) {
+      console.log(res.status(404).send(err))
+    }
+  }
+})
 module.exports = router;
