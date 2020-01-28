@@ -13,11 +13,11 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Homepage />
-        <About />
-        <Work />
-        <Contact />
+      <div className='scroll'>
+        <Homepage className='snap'/>
+        <About className='snap'/>
+        <Work className='snap'/>
+        <Contact className='snap'/>
       </div>
     );
   }
