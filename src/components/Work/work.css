@@ -1,6 +1,7 @@
 .work {
     height: 100vh;
     background-color: white;
+    scroll-snap-align: start;
   }
   
   .container {
