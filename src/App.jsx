@@ -3,7 +3,6 @@ import Homepage from "./components/Homepage/homepage";
 import Work from "./components/Work/Work";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import "./app.css";
 
 class App extends Component {
   constructor(props) {
