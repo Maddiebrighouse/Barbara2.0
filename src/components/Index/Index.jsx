@@ -70,6 +70,7 @@ class Index extends React.Component {
     return (
       <Slider {...settings}>
         {this.state.work.map(work => {
+          let date = JSON.prase(work.date);
           return (
             <a
               href={work.link}
@@ -88,7 +89,7 @@ class Index extends React.Component {
                     <h3 className={styles.category}>{work.category}</h3>
                     <h3 className={styles.episode}>{work.episode}</h3>
                     <Moment format="YYYY" withTitle className={styles.date}>
-                      {work.date}
+                      {date}
                     </Moment>
                     <p className={styles.occupation}>{work.occupation}</p>
                   </div>
