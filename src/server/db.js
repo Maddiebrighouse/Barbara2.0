@@ -9,7 +9,7 @@ module.exports = {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
-    const order = [ "Tv Series", "Tv Films", "Film","Commercial"]
+    const order = [ "Tv Series", "Film", "Tv Film", "Commercial"]
     const client = await Promise.resolve(clientPromise);
     const db = client.db("BarbaraDb");
     const output = await db
