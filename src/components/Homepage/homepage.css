@@ -13,6 +13,18 @@
   position: absolute;
 }
 
+.link {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: right;
+  bottom: 3%;
+  right: 1%;
+  position: absolute;
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  text-decoration: underline;
+}
 .mainImage {
   padding-top: 1%;
   width: 50%;
@@ -35,7 +47,9 @@
   .mainTitle {
     width: 60%;
   }
-
+  .link {
+    font-size: 170%;
+  }
   .text {
     font-size: 170%;
   }
@@ -62,8 +76,10 @@
   .mainTitle{
     width: 95%;
   }
-
   .text {
+    font-size: 100%;
+  }
+  .link {
     font-size: 100%;
   }
 }

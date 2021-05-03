@@ -15,7 +15,8 @@ const Homepage = () => {
         alt="Hand written title saying Barbara Darragh"
       />
       <div className={styles.lucy}>
-        <p className={styles.text}>Image inspired by Lucy Danner</p>
+        <a className={styles.link} href="https://www.instagram.com/madeleinebrighouse/" target="_blank">Illustration by Madeleine Brighouse-Mayo</a>
+        <p className={styles.text}>Inspired by Lucy Danner</p>
       </div>
     </div>
   );
