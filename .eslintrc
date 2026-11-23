@@ -1,7 +1,13 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
   "plugins": ["react", "jest", "prettier"],
-  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
+  "extends": ["airbnb", "plugin:prettier/recommended"],
   "globals": {
     "React": true,
     "document": true,
@@ -12,6 +18,9 @@
     "fetch": true
   },
   "root": true,
+  "settings": {
+    "import/no-cycle": ["error", { "maxDepth": 1 }]
+  },
   "rules": {
     "react/prefer-stateless-function": "warn",
     "react/self-closing-comp": [
@@ -64,8 +73,7 @@
     "import/prefer-default-export": 0,
     "import/no-unresolved": 0,
     "import/no-extraneous-dependencies": 0,
-    "import/extensions": 0,
-    "babel/object-curly-spacing": 0
+    "import/extensions": 0
   },
   "env": {
     "es6": true,

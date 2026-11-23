@@ -5,8 +5,8 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: commonPaths.outputPath,
-    chunkFilename: '[name].js',
-    publicPath: '/'
+    publicPath: '/',
+    clean: true,
   },
   module: {
     rules: [
@@ -14,34 +14,20 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          { loader: 'css-loader', options: { modules: true } },
-        ],
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader'
-      },
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: [
           {
-            loader: 'babel-loader',
-            query: {
-              presets: ['@babel/preset-env', '@babel/preset-react'],
-            },
+            loader: 'css-loader',
+            options: { modules: { localIdentName: '[local]___[hash:base64:5]' } },
           },
         ],
       },
     ],
   },
-  resolve: {
-    extensions: ['.js', '.jsx'],
-  },
-
   devServer: {
-    contentBase: commonPaths.outputPath,
+    static: {
+      directory: commonPaths.outputPath,
+    },
     compress: true,
     historyApiFallback: true,
+    port: 8080,
   },
 };
