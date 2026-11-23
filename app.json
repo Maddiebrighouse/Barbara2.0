@@ -1,0 +1,20 @@
+{
+  "name": "Barbara Darragh",
+  "description": "Website for costume designer Barbara Darragh",
+  "repository": "https://github.com/Maddiebrighouse/Barbara2.0",
+  "stack": "heroku-22",
+  "env": {
+    "USERNAMEDB": {
+      "required": true
+    },
+    "PASSWORDDB": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
